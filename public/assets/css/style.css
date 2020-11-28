@@ -3,9 +3,11 @@ body {
 }
 h1 {
     font-family: 'Yellowtail', cursive;
+    font-size: 4.5rem;
+    margin-bottom: 10px;
 }
 p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .form-control {
     margin-bottom: 20px;
@@ -15,4 +17,9 @@ p {
     background-color: #f15b6c;
     border-color: #f15b6c;
     margin: 20px;
+}
+
+.burgersEntered {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
