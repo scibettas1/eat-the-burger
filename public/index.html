@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Eat The Burger</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center" id="top-bar">
+                <img src="https://img.icons8.com/bubbles/300/000000/hamburger.png" alt="burger" />
+                <h1>Eat the Burger!</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center enter_section">
+                <p>Enter a burger you want to eat & click the "Submit" button.</p>
+                <form class="add-burger">
+                    <input type="text" class="form-control" name="burger_name" value="" id="burger_name" />
+                    <button type="submit" class="btn btn-primary" id="text-enter-button">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center enter_section">
+                <p>Eat and Delete a burger.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" class="task" id="not_devoured"></div>
+            <div class="col-md-6" class="task" id="devoured"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/burgers.js"></script>
+</body>
+
+</html>
