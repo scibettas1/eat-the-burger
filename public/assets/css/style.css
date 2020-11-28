@@ -1,3 +1,18 @@
+body {
+    background-color: #fef6aa;
+}
 h1 {
     font-family: 'Yellowtail', cursive;
+}
+p {
+    margin-bottom: 10px;
+}
+.form-control {
+    margin-bottom: 20px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #f15b6c;
+    border-color: #f15b6c;
+    margin: 20px;
 }
