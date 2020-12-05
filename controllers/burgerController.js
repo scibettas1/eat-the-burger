@@ -19,7 +19,7 @@ router.get("/burgers", function(req, res) {
 
 //I want to concentrate on just getting the information first. THEN I'll worry about post and delete.
 
-/* router.post("/burgers", function(req, res) {
+router.post("/burgers", function(req, res) {
   burger.create([
     "burger_name", "devoured"
   ], [
@@ -41,7 +41,7 @@ router.delete("/burgers/:id", function(req, res) {
       res.status(200).end();
     }
   });
-}); */
+});
 
 // Export routes for server.js to use.
 module.exports = router;
