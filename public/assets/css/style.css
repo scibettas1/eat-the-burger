@@ -23,3 +23,8 @@ p {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+.burgerName {
+    margin-top: 20px;
+    font-family: 'Yellowtail', cursive;
+    font-size: 30px;
+}
