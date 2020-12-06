@@ -59,12 +59,12 @@ $(function() {
     });
   });
 
-  $(".create-form").on("submit", function(event) {
+  $("#burger-form").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
-
+console.log("is this working")
     var newBurger = {
-      name: $("#burger_name")
+      burger_name: $("#burger_name")
         .val()
         .trim(),
       devoured: 0

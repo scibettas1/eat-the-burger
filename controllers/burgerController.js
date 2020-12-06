@@ -17,8 +17,6 @@ router.get("/burgers", function(req, res) {
   });
 });
 
-//I want to concentrate on just getting the information first. THEN I'll worry about post and delete.
-
 router.post("/burgers", function(req, res) {
   burger.create([
     "burger_name", "devoured"
@@ -29,6 +27,15 @@ router.post("/burgers", function(req, res) {
     res.json({ id: result.insertId });
   });
 });
+
+router.put("/burgers/:id", function(req, res) {
+    var condition = "id = " + req.params.id;
+    console.log(req.params.id)
+    burger.update({devoured: 1}, condition, function(result) {
+      // Send back the ID of the new quote
+      res.json({ id: result.insertId });
+    });
+  });
 
 router.delete("/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
