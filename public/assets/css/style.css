@@ -12,13 +12,35 @@ p {
 .form-control {
     margin-bottom: 20px;
 }
-.btn-primary {
+.submit {
+    color: #fff;
+    background-color: #60be92;
+    border-color: #60be92;
+}
+.submit:hover {
+    background-color:#8bc4aa;
+    border-color: #8bc4aa;
+}
+.devour-burger {
+    color: #fff;
+    background-color:  #88af45;
+    border-color: #88af45;
+    margin: 20px;
+}
+.devour-burger:hover {
+    background-color:#9db378;
+    border-color: #9db378;
+}
+.delete-burger {
     color: #fff;
     background-color: #f15b6c;
     border-color: #f15b6c;
     margin: 20px;
 }
-
+.delete-burger:hover {
+    background-color: #fe8492;
+    border-color: #fe8492;
+}
 .burgersEntered {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -27,4 +49,9 @@ p {
     margin-top: 20px;
     font-family: 'Yellowtail', cursive;
     font-size: 30px;
+}
+.burgers {
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
 }

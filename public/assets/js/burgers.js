@@ -11,18 +11,18 @@ $(function() {
 
     for (var i = 0; i < len; i++) {
       var new_elem =
-        "<li>" +
+        "<div class='row'><div class='col-md-9 text-center burgerName'>" +
         burgers[i].id + 
-        ". "+burgers[i].burger_name;
+        ". "+burgers[i].burger_name + "</div><div class='col-md-3 text-center'>";
 
       if (burgers[i].devoured) {
         new_elem +=
-        "<button class='delete-burger' data-id='" +
+        "<button class='btn delete-burger' data-id='" +
         burgers[i].id +
         "'>Delete</button></li>";
       } else {
         new_elem += 
-        "<button class='devour-burger' data-id='" +
+        "<button class='btn devour-burger' data-id='" +
         burgers[i].id +
         "'>Devour</button></li>";
       }
