@@ -13,25 +13,23 @@ $(function() {
       var new_elem =
         "<li>" +
         burgers[i].id + 
-        ". "+burgers[i].burger_name +
-        "<button class='notDevoured' data-id='" +
-        burgers[i].id +
-        "' data-newdevour='" +
-        !burgers[i].devoured +
-        "'>";
+        ". "+burgers[i].burger_name;
 
       if (burgers[i].devoured) {
-        new_elem += "Delete";
+        new_elem +=
+        "<button class='delete-burger' data-id='" +
+        burgers[i].id +
+        "'>Delete</button></li>";
       } else {
-        new_elem += "Devour";
+        new_elem += 
+        "<button class='devour-burger' data-id='" +
+        burgers[i].id +
+        "'>Devour</button></li>";
       }
 
       new_elem += "</button>";
 
-      /* new_elem +=
-        "<button class='delete-burger' data-id='" +
-        burgers[i].id +
-        "'>DELETE!</button></li>"; */
+
 
       if (burgers[i].devoured) {
         devouredEl.append(new_elem);
@@ -41,7 +39,7 @@ $(function() {
     }
   });
 
-  $(document).on("click", ".notDevoured", function(event) {
+  $(document).on("click", ".devour-burger", function(event) {
     var id = $(this).data("id");
 
     var newDevourState = {
